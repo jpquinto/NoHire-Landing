@@ -1,4 +1,3 @@
-import { WavyBackground } from "@/components/wavy-background";
 import { Footer } from "./_components/footer";
 import { HeroParallax } from "@/components/hero";
 
@@ -59,10 +58,6 @@ const MarketingPage = () => {
   return (
     <div className="min-h-full flex flex-col">
       <div className="flex flex-col items-center justify-center md:justify-start text-center gap-y-8 flex-1 px-6 pb-0 overflow-x-hidden relative">
-        <div className="absolute top-0 left-0 w-full h-[100dvh] opacity-50">
-          <WavyBackground blur={60} waveOpacity={0.1} backgroundFill={"#111217"}>
-          </WavyBackground>
-        </div>
         <HeroParallax products={products} />
       </div>
       <Footer />
